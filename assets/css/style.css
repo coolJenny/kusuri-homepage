@@ -1,6 +1,12 @@
 .megamenu {
   background-color: #666;
 }
+.megamenu>li>a {
+  padding: 14px 0 7px !important;
+  font-size: 12px !important;
+}
+
+
 header .pk-bnr {
     float: none!important;
     margin:0!important;
