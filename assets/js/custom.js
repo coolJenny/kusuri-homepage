@@ -1,3 +1,14 @@
+$(window).load(function(){
+    var css_tpl = '<style type="text/css">';
+    css_tpl += '#megamenu_29720704 ul.megamenu > li > .sub-menu > .content {';
+    css_tpl += '-webkit-transition: all 200ms ease-out !important;';
+    css_tpl += '-moz-transition: all 200ms ease-out !important;';
+    css_tpl += '-o-transition: all 200ms ease-out !important;';
+    css_tpl += '-ms-transition: all 200ms ease-out !important;';
+    css_tpl += 'transition: all 200ms ease-out !important;';
+    css_tpl += '}</style>'
+    $("head").append(css_tpl);
+});
 $(document).ready(function(){
      //$('.main-content .container:eq(0)').prepend($('.ocexpert-newsletter-mod-holder').html());
      var newsletter_html = $('.ocexpert-newsletter-mod-holder').html();
