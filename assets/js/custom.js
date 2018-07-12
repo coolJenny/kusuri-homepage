@@ -1,3 +1,8 @@
+function SetButtonText() {
+  var link = '<a href="#" class="logout-link">ログアウト</a>';
+  $('.my-account span').text('ログイン');
+  $('.logout-link').hide();
+};
 $(window).load(function(){
     var css_tpl = '<style type="text/css">';
     css_tpl += '#megamenu_29720704 ul.megamenu > li > .sub-menu > .content {';
@@ -10,6 +15,46 @@ $(window).load(function(){
     $("head").append(css_tpl);
 });
 $(document).ready(function(){
+
+    // search auto-complete
+    // $('#search_query').autocomplete({
+    //   delay: 0,
+    //   appendTo: "#autocomplete-results",
+    //   source: function(request, response) {   
+    //     $.ajax({
+    //       url: 'index.php?route=search/autocomplete&filter_name=' +  encodeURIComponent(request.term),
+    //       dataType: 'json',
+    //       success: function(json) {
+    //         response($.map(json, function(item) {
+    //           return {
+    //             label: item.name,
+    //             value: item.product_id,
+    //             href: item.href,
+    //             thumb: item.thumb,
+    //             desc: item.desc,
+    //             price: item.price
+    //           }
+    //         }));
+    //       }
+    //     });
+    //   },
+    //   select: function(event, ui) {
+    //     document.location.href = ui.item.href;
+        
+    //     return false;
+    //   },
+    //   focus: function(event, ui) {
+    //         return false;
+    //     },
+    //     minLength: 2
+    // })
+    // .data( "ui-autocomplete" )._renderItem = function( ul, item ) {
+    //   return $( "<li>" )
+    //     .append( "<a>" + item.label + "</a>" )
+    //     .appendTo( ul );
+    // };
+
+
      //$('.main-content .container:eq(0)').prepend($('.ocexpert-newsletter-mod-holder').html());
      var newsletter_html = $('.ocexpert-newsletter-mod-holder').html();
      if ($('header #slider').length)
@@ -169,68 +214,68 @@ $(document).ready(function(){
     windowLoad = true;
   });
   
-  $.ajax({
-    url: '//www.kusuriexpress.com/index.php?route=module/smartnotifications/getPopup',
-    type: 'POST',
-    data: {'uri' : uri, product_id:product_id},
-    dataType: 'json',
-    success: function (response) {
-      for(entry in response) {
+  // $.ajax({
+  //   url: '//www.kusuriexpress.com/index.php?route=module/smartnotifications/getPopup',
+  //   type: 'POST',
+  //   data: {'uri' : uri, product_id:product_id},
+  //   dataType: 'json',
+  //   success: function (response) {
+  //     for(entry in response) {
     
-        if(response[entry].match) {
-          repeat = response[entry].repeat;
-          popup_id = response[entry].id;
+  //       if(response[entry].match) {
+  //         repeat = response[entry].repeat;
+  //         popup_id = response[entry].id;
 
-          if(response[entry].delay>0) {
-            delay += (response[entry].delay*1000);
-          }
+  //         if(response[entry].delay>0) {
+  //           delay += (response[entry].delay*1000);
+  //         }
 
-          if(response[entry].timeout>0) {
-            timeout += (response[entry].timeout*1000);
-          } else {
-            timeout = false;
-          }
+  //         if(response[entry].timeout>0) {
+  //           timeout += (response[entry].timeout*1000);
+  //         } else {
+  //           timeout = false;
+  //         }
 
-          if(response[entry].event == 0) { // Document ready event      
-            if (documentReady) {    
-              showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation,response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
-            } else {
-              $(document).ready(function(){   
-                showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation,response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
-              });
-            }
-          }
+  //         if(response[entry].event == 0) { // Document ready event      
+  //           if (documentReady) {    
+  //             showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation,response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
+  //           } else {
+  //             $(document).ready(function(){   
+  //               showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation,response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
+  //             });
+  //           }
+  //         }
           
           
-          if(response[entry].event == 1) { // Window load event
+  //         if(response[entry].event == 1) { // Window load event
 
-            if(windowLoad) {
+  //           if(windowLoad) {
 
-              showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation,response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
-            }
-            else {
-              $(window).load(function() {
-                showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation,response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
-              });
-            }
+  //             showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation,response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
+  //           }
+  //           else {
+  //             $(window).load(function() {
+  //               showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation,response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
+  //             });
+  //           }
            
-          }
+  //         }
          
-          if(response[entry].event == 2) { // Body click event
-            $('body').click(function() {
-              if(isBodyClicked == false) {
-                showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation, response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
-                isBodyClicked = true;
-              } 
-            });
-          }
+  //         if(response[entry].event == 2) { // Body click event
+  //           $('body').click(function() {
+  //             if(isBodyClicked == false) {
+  //               showSmartNotificationsPopup(response[entry].popup_id, response[entry].title, response[entry].description, response[entry].template, response[entry].icon, response[entry].position, response[entry].open_animation, response[entry].close_animation, response[entry].show_icon,response[entry].icon_type,response[entry].icon_image);
+  //               isBodyClicked = true;
+  //             } 
+  //           });
+  //         }
 
-          }
+  //         }
 
-      }
+  //     }
       
-    }
-  });
+  //   }
+  // });
   
   var showSmartNotificationsPopup = function (popup_id, title, description, template, icon, position,open_animation,close_animation, show_icon,typeOfIcon,image) {
     setTimeout(function() {     

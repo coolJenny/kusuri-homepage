@@ -1,3 +1,9 @@
+header .pk-bnr {
+    float: none!important;
+    margin:0!important;
+}
+header .pk-bnr img{padding-top: 15px;}
+
 .ocexpert-newsletter-mod {
      width: 100%;
      /*margin-bottom: 15px;*/
