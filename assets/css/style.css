@@ -5,6 +5,27 @@
   padding: 14px 0 7px !important;
   font-size: 12px !important;
 }
+.top-title {
+  text-align: center;
+  padding-top: 10px;
+}
+.express-title {
+  color: #bf0000;
+  font-size: 20px;
+  font-weight: bold;
+}
+.free-pay {
+  background-color: #002e72;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 1px 20px 0 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    .top-title {
+      display: none;
+    }
+}
 
 
 header .pk-bnr {
