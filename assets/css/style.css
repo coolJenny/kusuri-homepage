@@ -11,6 +11,36 @@
 .topnav .navlink:nth-child(10) {
   border-right: 0 !important;
 }
+.topnav .navlink:nth-child(1){
+  border-top: 3px solid #c9061c;
+}
+.topnav .navlink:nth-child(2){
+  border-top: 3px solid #ec8414;
+}
+.topnav .navlink:nth-child(3){
+  border-top: 3px solid #ecbc14;
+}
+.topnav .navlink:nth-child(4){
+  border-top: 3px solid #b6cb08;
+}
+.topnav .navlink:nth-child(5){
+  border-top: 3px solid #75ae05;
+}
+.topnav .navlink:nth-child(6){
+  border-top: 3px solid #199934;
+}
+.topnav .navlink:nth-child(7){
+  border-top: 3px solid #06b39d;
+}
+.topnav .navlink:nth-child(8){
+  border-top: 3px solid #028eb6;
+}
+.topnav .navlink:nth-child(9){
+  border-top: 3px solid #1e58c2;
+}
+.topnav .navlink:nth-child(10){
+  border-top: 3px solid #731cdf;
+}
 
 /* Style the links inside the navigation bar */
 .topnav a {
@@ -18,8 +48,7 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 3px 16px;
-    margin: 11px 0;
+    padding: 8px 16px;
     text-decoration: none;
     font-size: 12px;
 }
@@ -39,8 +68,7 @@
 .dropdown {
     float: left;
     overflow: hidden;
-    padding: 0 16px;
-    margin: 11px 0;
+    margin: 0 !important;
 }
 
 /* Style the dropdown button to fit inside the topnav */
@@ -49,8 +77,10 @@
     border: none;
     outline: none;
     color: white;
+    padding: 8px 16px;
     background-color: inherit;
     font-family: inherit;
+    margin: 0;
 }
 
 /* Style the dropdown content (hidden by default) */
@@ -103,6 +133,11 @@
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
+  .topnav .navlink {
+    border-bottom: 1px solid #8d8b8b;
+    border-top: 0 !important;
+    border-right: 0 !important;
+  }
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
