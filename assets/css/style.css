@@ -1,7 +1,15 @@
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #333;
+    background-color: #666666;
     overflow: hidden;
+    padding: 0 50px;
+}
+
+.topnav .navlink {
+  border-right: 1px solid #8d8b8b;
+}
+.topnav .navlink:nth-child(10) {
+  border-right: 0 !important;
 }
 
 /* Style the links inside the navigation bar */
@@ -10,9 +18,10 @@
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 3px 16px;
+    margin: 11px 0;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 12px;
 }
 
 /* Add an active class to highlight the current page */
@@ -30,19 +39,18 @@
 .dropdown {
     float: left;
     overflow: hidden;
-    margin: 0 !important;
+    padding: 0 16px;
+    margin: 11px 0;
 }
 
 /* Style the dropdown button to fit inside the topnav */
 .dropdown .dropbtn {
-    font-size: 17px; 
+    font-size: 12px; 
     border: none;
     outline: none;
     color: white;
-    padding: 14px 16px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
 }
 
 /* Style the dropdown content (hidden by default) */
