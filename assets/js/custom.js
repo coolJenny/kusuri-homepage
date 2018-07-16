@@ -473,5 +473,14 @@ $(document).ready(function(){
     }
   });
 
-
+  $("#dd_link").click(function() {
+      if($('.header_kw').css('height') == '70px'){
+        $(".header_kw").css('height','auto') ;
+        $("#dd_link a").html('元に戻す <i class="fa fa-caret-up"></i>') ;
+      }else{
+        $(".header_kw").css('height','70px');
+        $("#dd_link a").html('もっと表示 <i class="fa fa-caret-down"></i>') ;
+      }
+        return false;
+  });
 });
