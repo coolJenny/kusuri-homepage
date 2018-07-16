@@ -4,6 +4,9 @@
     overflow: hidden;
     padding: 0 50px;
 }
+.main-header {
+  padding: 0 50px;
+}
 
 .topnav .navlink {
   border-right: 1px solid #8d8b8b;
