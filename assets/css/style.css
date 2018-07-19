@@ -161,6 +161,10 @@
   }
 }
 
+.search-form .search-input {
+  border: 1px solid #af0000;
+}
+
 
 .megamenu {
   background-color: #666;
