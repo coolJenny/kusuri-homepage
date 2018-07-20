@@ -169,7 +169,11 @@
 }
 
 .search-aside-links {
-  height: 60px;
+  
+}
+.search-aside-links span {
+  color: #af0000;
+  font-size: 30px;
 }
 
 
