@@ -168,12 +168,14 @@
   background-color: #af0000 !important;
 }
 
-.search-aside-links {
-  
+.iwt {
+  display: inline-grid;
+  padding: 5px 15px;
 }
-.search-aside-links span {
+.search-aside-links i {
   color: #af0000;
   font-size: 30px;
+  text-align: center;
 }
 
 
