@@ -204,7 +204,9 @@
   padding:3px 5px;
 }
 
-
+.main-content {
+  padding: 0 50px;
+}
 
 .megamenu {
   background-color: #666;
