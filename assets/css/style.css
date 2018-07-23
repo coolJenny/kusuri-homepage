@@ -214,7 +214,7 @@
   float: right;
   color: #fff;
 }
-.category-menu-heading a:hover {
+.category-menu-heading a:hover, .category-menu-wrapper span:hover {
   color: #af0000;
 }
 .category-menu-wrapper ul {
