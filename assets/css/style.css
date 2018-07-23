@@ -242,6 +242,27 @@
 .right-layer ul li img {
   width: 100%;
 }
+.banner-img a img:hover, .right-layer a img:hover {
+  opacity: .65;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
