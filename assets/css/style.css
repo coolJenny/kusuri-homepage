@@ -204,12 +204,25 @@
   padding:3px 5px;
 }
 
-.main-content {
-  padding: 0 50px;
+.category-menu-heading {
+  padding: 7px 10px;
+  background-color: #666;
+  color: #fff;
+  font-size: 13px;
+}
+.category-menu-heading a {
+  float: right;
+  color: #fff;
+}
+.category-menu-heading a:hover {
+  color: #af0000;
 }
 
-.megamenu {
-  background-color: #666;
+
+
+
+.main-content {
+  padding: 0 50px;
 }
 .megamenu>li>a {
   padding: 14px 0 7px !important;
