@@ -235,6 +235,13 @@
   vertical-align: middle;
 }
 
+.right-layer ul {
+  list-style: none;
+  padding: 0;
+}
+.right-layer ul li img {
+  width: 100%;
+}
 
 
 
