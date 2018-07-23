@@ -217,6 +217,23 @@
 .category-menu-heading a:hover {
   color: #af0000;
 }
+.category-menu-wrapper ul {
+  list-style: none;
+  padding: 10px 0 0 0;
+}
+.category-menu-wrapper ul span {
+  font-size: 13px;
+  color: black;
+}
+.category-menu-wrapper ul li {
+  padding: 5px 0 5px 7px;
+}
+.category-menu-wrapper ul li i {
+  padding-right: 5px;
+}
+.category-menu-wrapper ul li img {
+  vertical-align: middle;
+}
 
 
 
