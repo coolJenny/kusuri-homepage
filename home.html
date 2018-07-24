@@ -112,53 +112,6 @@
 	</script>
 
 	<script type="text/javascript" src="assets/js/jssor.slider-27.4.0.min.js"></script>
-	<script type="text/javascript">
-        jssor_1_slider_init = function() {
-
-            var jssor_1_options = {
-              $AutoPlay: 0,
-              $AutoPlaySteps: 5,
-              $SlideDuration: 160,
-              $SlideWidth: 200,
-              $SlideSpacing: 3,
-              $ArrowNavigatorOptions: {
-                $Class: $JssorArrowNavigator$,
-                $Steps: 5
-              },
-              $BulletNavigatorOptions: {
-                $Class: $JssorBulletNavigator$
-              }
-            };
-
-            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
-
-            /*#region responsive code begin*/
-
-            var MAX_WIDTH = 1042.66;
-
-            function ScaleSlider() {
-                var containerElement = jssor_1_slider.$Elmt.parentNode;
-                var containerWidth = containerElement.clientWidth;
-
-                if (containerWidth) {
-
-                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
-
-                    jssor_1_slider.$ScaleWidth(expectedWidth);
-                }
-                else {
-                    window.setTimeout(ScaleSlider, 30);
-                }
-            }
-
-            ScaleSlider();
-
-            $Jssor$.$AddEvent(window, "load", ScaleSlider);
-            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
-            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
-            /*#endregion responsive code end*/
-        };
-    </script>
 
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">			
 </head>	
@@ -408,73 +361,162 @@
 						        <div data-u="arrowright" class="jssora073" style="right:-10px;" data-autocenter="2">
 						            <i class="fa fa-angle-right"></i>
 						        </div>
-						    </div>	
-						    <script type="text/javascript">jssor_1_slider_init();</script>												
-							<div class="box blog-module blog-latest-posts box-no-advanced clearfix">
-							    <div class="col-sm-3">
-							        <a href="index-route=blog_blog.php.html"><span class="css-sp bg-news_heading_image"></span><div class="box-heading">新着ニュース</div></a>
-							    </div>
-							    <div class="col-sm-9">
-							        <div class="strip-line"></div>
-							        <div class="box-content box-latest-posts">								             
-							            <ul class="blog-list-default">
-							                <li>
-							                    <div class="media">
-							                        <a href="index-route=blog_article&article_id=68.php.html">
-							                            <div class="media-body">
-							                                <div class="date-published col-sm-2 col-xs-3">2018.07.09</div>
-							                                <h5 class="col-sm-9 col-xs-8">72時間限定タイムセール！人気10商品 週替り10%割引！</h5>
-							                            </div>
-							                        </a>
-							                    </div>
-							                </li>
-			                                <li>
-							                    <div class="media">
-							                        <a href="index-route=blog_article&article_id=67.php.html">
-							                           	<div class="media-body">
-							                                <div class="date-published col-sm-2 col-xs-3">2018.07.06</div>
-							                                <h5 class="col-sm-9 col-xs-8">先着200名！週末限定の500円割引クーポン配布</h5>
-							                            </div>
-							                        </a>
-							                    </div>
-							                </li>
-			                                <li>
-							                    <div class="media">
-							                        <a href="index-route=blog_article&article_id=101.php.html">
-							                            <div class="media-body">
-							                                <div class="date-published col-sm-2 col-xs-3">2018.07.03</div>
-							                                <h5 class="col-sm-9 col-xs-8">7月月替りセール開催！スタッフ厳選の人気商品10％オフ</h5>
-							                            </div>
-							                        </a>
-							                    </div>
-							                </li>
-			                                <li>
-							                    <div class="media">
-							                        <a href="index-route=blog_article&article_id=100.php.html">
-							                                <div class="media-body">
-							                                <div class="date-published col-sm-2 col-xs-3">2018.07.02</div>
-							                                <h5 class="col-sm-9 col-xs-8">8日間限定！七夕セール開催 お買い物総額から最大15%割引</h5>
-							                            </div>
-							                        </a>
-							                    </div>
-							                </li>
-			                                <li>
-							                    <div class="media">
-							                        <a href="index-route=blog_article&article_id=69.php.html">
-							                            <div class="media-body">
-							                                <div class="date-published col-sm-2 col-xs-3">2018.06.28</div>
-							                                <h5 class="col-sm-9 col-xs-8">毎週木曜レディースデー！女性限定クーポン10％オフ</h5>
-							                            </div>
-							                        </a>
-							                    </div>
-							                </li>
-			                            </ul>
-							            <div class="text-right">
-							                <a href="index-route=blog_blog.php.html" class="btn btn-blog">続きを読む</a>
-							            </div>
-			                    	</div>
-							    </div>
-							</div>										
+						    </div>
+						    <script type="text/javascript">
+						        jssor_1_slider_init = function() {
+
+						            var jssor_1_options = {
+						              $AutoPlay: 0,
+						              $AutoPlaySteps: 5,
+						              $SlideDuration: 160,
+						              $SlideWidth: 200,
+						              $SlideSpacing: 3,
+						              $ArrowNavigatorOptions: {
+						                $Class: $JssorArrowNavigator$,
+						                $Steps: 5
+						              },
+						              $BulletNavigatorOptions: {
+						                $Class: $JssorBulletNavigator$
+						              }
+						            };
+
+						            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+						            /*#region responsive code begin*/
+
+						            var MAX_WIDTH = 1042.66;
+
+						            function ScaleSlider() {
+						                var containerElement = jssor_1_slider.$Elmt.parentNode;
+						                var containerWidth = containerElement.clientWidth;
+
+						                if (containerWidth) {
+
+						                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+						                    jssor_1_slider.$ScaleWidth(expectedWidth);
+						                }
+						                else {
+						                    window.setTimeout(ScaleSlider, 30);
+						                }
+						            }
+
+						            ScaleSlider();
+
+						            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+						            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+						            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+						            /*#endregion responsive code end*/						            
+						        };
+						        jssor_1_slider_init();
+						    </script>	
+							
+						    <br>
+
+						    <div id="jssor_2" style="position:relative;margin:0 auto;top:0px;left:0px;width:1042.66px;height:210px;overflow:hidden;visibility:hidden;display: flex;align-items: center;justify-content: center;">
+						        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:980px;height:169px;overflow:hidden;" class="main-data">
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/001.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/005.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/006.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/007.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/008.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/009.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/010.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/011.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/024.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/025.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/026.jpg" /></a>
+						            </div>
+						            <div>
+						                <a href="#"><img data-u="image" src="assets/images/027.jpg" /></a>
+						            </div>
+						        </div>
+						        <!-- Bullet Navigator -->
+						        <div data-u="navigator" class="jssorb057" style="position:absolute;top: 197px;right:12px;" data-autocenter="1">
+						            <div data-u="prototype" class="i" style="width:16px;height:16px;">
+						                <svg viewbox="0 0 16000 16000" style="position:absolute;top:0;left:0;width:100%;height:100%;">
+						                    <circle class="b" cx="8000" cy="8000" r="5000"></circle>
+						                </svg>
+						            </div>
+						        </div>
+						        <!-- Arrow Navigator -->
+						        <div data-u="arrowleft" class="jssora073" style="left:5px;" data-autocenter="2">
+						            <i class="fa fa-angle-left"></i>
+						        </div>
+						        <div data-u="arrowright" class="jssora073" style="right:-10px;" data-autocenter="2">
+						            <i class="fa fa-angle-right"></i>
+						        </div>
+						    </div>
+						    <script type="text/javascript">
+						        jssor_1_slider_init = function() {
+
+						            var jssor_1_options = {
+						              $AutoPlay: 0,
+						              $AutoPlaySteps: 5,
+						              $SlideDuration: 160,
+						              $SlideWidth: 200,
+						              $SlideSpacing: 3,
+						              $ArrowNavigatorOptions: {
+						                $Class: $JssorArrowNavigator$,
+						                $Steps: 5
+						              },
+						              $BulletNavigatorOptions: {
+						                $Class: $JssorBulletNavigator$
+						              }
+						            };
+
+						            var jssor_1_slider = new $JssorSlider$("jssor_2", jssor_1_options);
+
+						            /*#region responsive code begin*/
+
+						            var MAX_WIDTH = 1042.66;
+
+						            function ScaleSlider() {
+						                var containerElement = jssor_1_slider.$Elmt.parentNode;
+						                var containerWidth = containerElement.clientWidth;
+
+						                if (containerWidth) {
+
+						                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+						                    jssor_1_slider.$ScaleWidth(expectedWidth);
+						                }
+						                else {
+						                    window.setTimeout(ScaleSlider, 30);
+						                }
+						            }
+
+						            ScaleSlider();
+
+						            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+						            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+						            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+						            /*#endregion responsive code end*/						            
+						        };
+						        jssor_1_slider_init();
+						    </script>
+
 							<div class="row">
 								<div class="col-md-12">												
 			     					<div class="advanced-grid advanced-grid-39381354 Home-Banner " style="margin-top: 0px;margin-left: 0px;margin-right: 0px;margin-bottom: 0px;">

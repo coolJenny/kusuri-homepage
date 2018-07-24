@@ -270,7 +270,7 @@
   font-size: 40px;
   color: #cccccc;
 }
-#jssor_1 > :first-child {
+#jssor_1 > :first-child, #jssor_2 > :first-child {
   position: relative !important;
 }
 
