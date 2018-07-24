@@ -246,6 +246,34 @@
   opacity: .65;
 }
 
+/*jssor slider css*/
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+/*jssor slider bullet skin 057 css*/
+.jssorb057 .i {position:absolute;cursor:pointer;}
+.jssorb057 .i .b {fill:#cccccc;}
+.jssorb057 .i:hover .b {fill: #af0000;}
+.jssorb057 .iav .b {fill: #af0000;}
+.jssorb057 .i.idn {opacity:.3;}
+
+/*jssor slider arrow skin 073 css*/
+.jssora073 {display:block;position:absolute;cursor:pointer;}
+.jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
+.jssora073:hover {opacity:.8;}
+.jssora073.jssora073dn {opacity:.4;}
+.jssora073.jssora073ds {opacity:.3;pointer-events:none;}
+.jssora073 i {
+  font-size: 40px;
+  color: #cccccc;
+}
+#jssor_1 > :first-child {
+  position: relative !important;
+}
+
 
 
 
