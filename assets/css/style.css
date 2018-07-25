@@ -1,3 +1,6 @@
+img {
+  vertical-align: middle;
+}
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #666666;
@@ -243,7 +246,7 @@
   width: 100%;
 }
 .banner-img a img:hover, .right-layer a img:hover, .main-data img:hover{
-  opacity: .65;
+  opacity: .65 !important;
 }
 
 /*jssor slider css*/
@@ -270,11 +273,42 @@
   font-size: 40px;
   color: #cccccc;
 }
-#jssor_1 > :first-child, #jssor_2 > :first-child {
+#jssor_1 > :first-child, #jssor_2 > :first-child, #jssor_3 > :first-child, #jssor_4 > :first-child, #jssor_5 > :first-child {
   position: relative !important;
 }
 
+.recent-products i {
+  color: #a40000;
+}
+.group-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #bf0000;
+  float: left;
+  margin: 0;
+}
+.group-sub-title {
+  float: right;
+  font-size: 12px;
+}
+.group-sub-title a:hover {
+  text-decoration: underline;
+}
 
+.express-news {
+  margin-right: -10px;
+  margin-left: -10px;
+  background-color: #f9f9f9;
+}
+.express-news .row {
+  padding-left: 25px;
+}
+.express-news i {
+  color: #b00000;
+}
+.express-news ul {
+  list-style: none;
+}
 
 
 
