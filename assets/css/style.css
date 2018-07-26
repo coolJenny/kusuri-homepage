@@ -195,6 +195,9 @@ img:hover {
   display: inline-grid;
   padding: 5px 15px;
 }
+.iwt:hover {
+  opacity: .65;
+}
 .search-aside-links i {
   color: #af0000;
   font-size: 30px;
