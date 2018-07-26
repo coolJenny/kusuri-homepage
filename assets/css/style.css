@@ -178,10 +178,14 @@ img {
 }
 
 .search-form .search-input {
-  border: 1px solid #af0000;
+  border: 2px solid #af0000;
 }
 .search-form .search-btn {
   background-color: #af0000 !important;
+  border: 2px solid #af0000;
+}
+.search-form .search-btn i {
+  color: #ffffff;
 }
 
 .iwt {
