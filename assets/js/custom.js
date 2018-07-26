@@ -338,64 +338,22 @@ $(document).ready(function(){
       
   //   }
   // });
-  
-  var showSmartNotificationsPopup = function (popup_id, title, description, template, icon, position,open_animation,close_animation, show_icon,typeOfIcon,image) {
-    setTimeout(function() {     
-      var layout;
-      if (show_icon==1 && typeOfIcon == 'p' ) {
-        layout =  '<div class="noty_message pop-activity ' + template + '"><div class="icon"><i class="fa ' + icon + '"></i></div><div class="noty_text"></div><div class="noty_close">test</div></div>'
-      } else if (show_icon == 1 && typeOfIcon == 'u'){
-        layout = '<div class="noty_message pop-activity ' + template + '"><div class="image"><img src="'+image+'"></div><div class="noty_text"></div><div class="noty_close">test</div></div>'
-      } else  {
-        layout =  '<div class="noty_message pop-activity ' + template + '"><div class="noty_text"></div><div class="noty_close">test</div></div>'
-      }   
-
-      var n = noty({
-                text        : '<h3>' + title + '</h3><p>' + description + '</p>',
-                dismissQueue: true,
-                layout      : position,
-                closeWith   : ['click'],
-                theme   : 'smartNotifications',
-                timeout   : timeout,
-                template  : layout,
-                maxVisible  : 10,
-                animation   : {
-                    open  : 'animated '+open_animation,
-                    close : 'animated '+close_animation,
-                    easing: 'swing',
-                    speed : 1500
-                }
-            });             
-    }, delay);    
-  };
 
 
-  var owl12401883 = $(".box #myCarousel12401883 .carousel-inner");  
-  $("#myCarousel12401883_next").click(function(){
-      owl12401883.trigger('owl.next');
-      return false;
-    })
-  $("#myCarousel12401883_prev").click(function(){
-      owl12401883.trigger('owl.prev');
-      return false;
-  });    
-  owl12401883.owlCarousel({slideSpeed : 500, singleItem:true, });
-
-
-  var camera_slider = $("#camera_wrap_1");                     
-  camera_slider.owlCarousel({
-      slideSpeed : 300,
-      lazyLoad : true,
-      singleItem: true,
-      autoPlay: 6000,
-      stopOnHover: true,
-      navigation: true,
-              navigationText: false
-  });
-  $(window).load(function() { 
-      $("#camera_1 .spinner").fadeOut(200);
-      $("#camera_wrap_1").css("height", "auto");
-  });
+  // var camera_slider = $("#camera_wrap_1");                     
+  // camera_slider.owlCarousel({
+  //     slideSpeed : 300,
+  //     lazyLoad : true,
+  //     singleItem: true,
+  //     autoPlay: 6000,
+  //     stopOnHover: true,
+  //     navigation: true,
+  //             navigationText: false
+  // });
+  // $(window).load(function() { 
+  //     $("#camera_1 .spinner").fadeOut(200);
+  //     $("#camera_wrap_1").css("height", "auto");
+  // });
 
 
   var uri = location.pathname + location.search;
