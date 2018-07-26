@@ -10,6 +10,9 @@ ul {
 img {
   vertical-align: middle;
 }
+img:hover {
+  opacity: .65;
+}
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #666666;
