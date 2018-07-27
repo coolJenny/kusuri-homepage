@@ -3,6 +3,7 @@ a {
 }
 a:hover {
   color: #af0000;
+  text-decoration: none;
 }
 ul {
   list-style: none;
