@@ -336,9 +336,17 @@ img:hover {
 }
 
 .footer {
-  background-color: #f4f3f1;
   padding-left: 50px;
   padding-right: 50px;
+}
+.footer a {
+  font-size: 13px;
+}
+.footer h4, .footer .footer-linklsts h5 {
+  font-weight: bold;
+}
+.footer .footer-linklsts ul {
+  padding-left: 12px;
 }
 .footer .content-center {
   text-align: center;
