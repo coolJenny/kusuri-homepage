@@ -355,21 +355,21 @@ img:hover {
   color: #c8c7c5;
 }
 
-#owl-demo {
+.owl-theme {
   padding: 0 30px;
 }
-#owl-demo .flex {
+.owl-theme .flex {
   display: flex;
   height: 200px;
   background: #ebebeb;
   margin: 1px;
 }
-#owl-demo .item{  
+.owl-theme .item{  
   color: #FFF;
   margin: 1px;
   text-align: center;
 }
-#owl-demo .active span, #owl-demo span:hover {
+.owl-theme .owl-page.active span, .owl-theme .owl-page span:hover {
   background-color: #af0000;
 }
 .owl-theme .owl-controls .owl-buttons div {

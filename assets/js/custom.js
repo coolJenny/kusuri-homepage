@@ -1,6 +1,6 @@
 $(document).ready(function() {
  
-  var owl = $("#owl-demo");
+  var owl = $("#owl-demo1");
  
   owl.owlCarousel({
       items : 5, //5 items above 1000px browser width
