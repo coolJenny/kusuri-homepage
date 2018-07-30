@@ -355,34 +355,35 @@ img:hover {
   color: #c8c7c5;
 }
 
+#owl-demo {
+  padding: 0 30px;
+}
 #owl-demo .flex {
   display: flex;
-}
-#owl-demo .item{
+  height: 200px;
   background: #ebebeb;
-  padding: 80px 90px;
+  margin: 1px;
+}
+#owl-demo .item{  
   color: #FFF;
   margin: 1px;
   text-align: center;
 }
-#owl-demo .item:hover {
-  /*cursor: pointer;*/
-}
 #owl-demo .active span, #owl-demo span:hover {
   background-color: #af0000;
 }
-.customNavigation{
-  text-align: center;
-}
-
-.customNavigation a{
-  font-size: 40px;
-  color: #cccccc;
+.owl-theme .owl-controls .owl-buttons div {
   position: absolute;
+  top: 70px;
+  background: transparent;
+  color: #ccc;
+  font-size: 40px;
+  padding: 0;
+  opacity: 1;
 }
-.customNavigation .prev {
+.owl-theme .owl-controls .owl-buttons .owl-prev {
   left: 0;
 }
-.customNavigation .next {
+.owl-theme .owl-controls .owl-buttons .owl-next {
   right: 0;
 }
