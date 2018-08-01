@@ -22,6 +22,50 @@ $(document).ready(function() {
       pagination: false
   });
 
+  var owl3 = $("#owl-demo3"); 
+  owl3.owlCarousel({
+      items : 5, //5 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0
+      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+      navigation : true,
+      pagination: false
+  });
+
+  var owl4 = $("#owl-demo4"); 
+  owl4.owlCarousel({
+      items : 5, //5 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0
+      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+      navigation : true,
+      pagination: false
+  });
+
+  var owl5 = $("#owl-demo5"); 
+  owl5.owlCarousel({
+      items : 5, //5 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0
+      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+      navigation : true,
+      pagination: false
+  });
+
+  var owl6 = $("#owl-demo6"); 
+  owl6.owlCarousel({
+      items : 6, //6 items above 1000px browser width
+      itemsDesktop : [1000,5], //5 items between 1000px and 901px
+      itemsDesktopSmall : [900,3], // betweem 900px and 601px
+      itemsTablet: [600,2], //2 items between 600 and 0
+      itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
+      navigation : true,
+      pagination: false
+  });
+
   $('.owl-theme .owl-prev').html('<i class="fa fa-angle-left"></i>');
   $('.owl-theme .owl-next').html('<i class="fa fa-angle-right"></i>');
 });

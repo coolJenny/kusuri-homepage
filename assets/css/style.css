@@ -360,20 +360,30 @@ img:hover {
   padding: 0 30px;
 }
 .owl-theme .flex {
-  display: flex;
-  height: 200px;
-  background: #ebebeb;
-  margin: 1px;
+  display: block;
 }
 .owl-theme .flex img {
-  height: 100%;
+  width: 100%;
 }
 .owl-theme .item{  
   color: #FFF;
   text-align: center;
 }
-#owl-demo1 .item{    
+.owl-theme .flex p {
+  margin: 0;
+}
+.owl-theme .v-price {
+  text-decoration: line-through;
+  color: #aaaaaa;
+  padding-left: 60px;
+}
+.owl-theme .real-price {
+  float: right;
+  color: #af0000;
+}
+#owl-demo1 .flex{    
   margin: 1px;
+  background: #ebebeb;
 }
 .owl-theme .owl-page.active span, .owl-theme .owl-page span:hover {
   background-color: #af0000;
@@ -393,6 +403,6 @@ img:hover {
 .owl-theme .owl-controls .owl-buttons .owl-next {
   right: 0;
 }
-#owl-demo2 .owl-controls .owl-buttons div {
+/*#owl-demo2 .owl-controls .owl-buttons div {
   top: 90px;
-}
+}*/
