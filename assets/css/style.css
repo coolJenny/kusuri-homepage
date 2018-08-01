@@ -255,8 +255,15 @@ img:hover {
   vertical-align: middle;
 }
 
+.right-layer {
+  display: block;
+}
 .right-layer .image-lists img{
   width: 100%;
+  padding-bottom: 7px;
+}
+.right-layer .right-lists {
+  border: 1px solid #aaaaaa;
   padding-bottom: 7px;
 }
 .right-layer ul {
