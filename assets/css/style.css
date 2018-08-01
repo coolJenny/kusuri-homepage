@@ -359,23 +359,33 @@ img:hover {
 .owl-theme {
   padding: 0 30px;
 }
+.owl-theme a:hover .product-description {
+  text-decoration: underline;
+}
 .owl-theme .flex {
   display: block;
+  padding: 0 5px;
 }
 .owl-theme .flex img {
   width: 100%;
+  margin-bottom: 10px;
 }
 .owl-theme .item{  
-  color: #FFF;
   text-align: center;
 }
 .owl-theme .flex p {
-  margin: 0;
+  margin: 5px 0 0 0;
 }
 .owl-theme .v-price {
   text-decoration: line-through;
   color: #aaaaaa;
   padding-left: 60px;
+}
+#owl-demo6 .owl-controls .owl-buttons div {
+  top: 50px;
+}
+#owl-demo6 .v-price {
+  padding-left: 30px;
 }
 .owl-theme .real-price {
   float: right;
@@ -383,7 +393,10 @@ img:hover {
 }
 #owl-demo1 .flex{    
   margin: 1px;
-  background: #ebebeb;
+  padding: 0;
+}
+#owl-demo1 .flex img {
+  margin: 0;
 }
 .owl-theme .owl-page.active span, .owl-theme .owl-page span:hover {
   background-color: #af0000;
