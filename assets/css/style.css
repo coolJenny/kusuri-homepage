@@ -365,10 +365,15 @@ img:hover {
   background: #ebebeb;
   margin: 1px;
 }
+.owl-theme .flex img {
+  height: 100%;
+}
 .owl-theme .item{  
   color: #FFF;
-  margin: 1px;
   text-align: center;
+}
+#owl-demo1 .item{    
+  margin: 1px;
 }
 .owl-theme .owl-page.active span, .owl-theme .owl-page span:hover {
   background-color: #af0000;
@@ -387,4 +392,7 @@ img:hover {
 }
 .owl-theme .owl-controls .owl-buttons .owl-next {
   right: 0;
+}
+#owl-demo2 .owl-controls .owl-buttons div {
+  top: 90px;
 }

@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function() {  
  
   var owl1 = $("#owl-demo1"); 
   owl1.owlCarousel({
@@ -8,10 +8,7 @@ $(document).ready(function() {
       itemsTablet: [600,2], //2 items between 600 and 0
       itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
       navigation : true
-  });
- 
-  $('.owl-prev').html('<i class="fa fa-angle-left"></i>');
-  $('.owl-next').html('<i class="fa fa-angle-right"></i>');
+  }); 
 
 
   var owl2 = $("#owl-demo2"); 
@@ -23,4 +20,7 @@ $(document).ready(function() {
       itemsMobile : false, // itemsMobile disabled - inherit from itemsTablet option
       navigation : true
   });
+
+  $('.owl-theme .owl-prev').html('<i class="fa fa-angle-left"></i>');
+  $('.owl-theme .owl-next').html('<i class="fa fa-angle-right"></i>');
 });
