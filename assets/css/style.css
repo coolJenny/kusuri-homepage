@@ -263,8 +263,29 @@ img:hover {
   padding-bottom: 7px;
 }
 .right-layer .right-lists {
-  border: 1px solid #aaaaaa;
+  border: 1px solid #d0cfcf;
+  background-color: #f7f6f5;
   padding-bottom: 7px;
+}
+.right-layer .right-lists .logout-icon {
+  float: right;
+  margin-top: 3px;
+  padding: 2px 2px 0px 4px;
+  border: 1px solid #af0000;
+  font-size: 11px;
+  color: #af0000;
+}
+.right-layer .right-lists .pointer {
+  font-size: 11px;
+  color: #af0000;
+}
+.right-layer .right-lists .boundary {
+  border-bottom: 1px solid #d0cfcf;
+  padding-bottom: 10px;
+}
+.right-layer .right-lists ul{
+  list-style: disc;
+  padding-left: 20px;
 }
 .right-layer ul {
   list-style: none;
