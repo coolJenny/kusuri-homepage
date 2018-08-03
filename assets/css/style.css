@@ -14,6 +14,17 @@ img {
 img:hover {
   opacity: .65;
 }
+.top-bar .express-title {
+  color: #af0000;
+  font-weight: bold;
+  font-size: 20px;
+}
+.top-bar .free-pay {
+  background: #002e72;
+  border-radius: 15px;
+  color: #ffffff;
+  padding: 5px 10px;
+}
 /* Add a black background color to the top navigation */
 .topnav {
     background-color: #666666;
@@ -220,6 +231,10 @@ img:hover {
   border-radius:5px;
   padding:3px 5px;
 }
+.header_kw li a:hover {
+  background: #ababab;
+  color: #ffffff;
+}
 
 .main-content {
   padding: 0 50px;
@@ -257,6 +272,7 @@ img:hover {
 
 .right-layer {
   display: block;
+  padding-right: 0;
 }
 .right-layer .image-lists img{
   width: 100%;
@@ -275,6 +291,12 @@ img:hover {
   font-size: 11px;
   color: #af0000;
 }
+.banner-img a img:hover, .right-layer a img:hover, .main-data img:hover, .right-layer .right-lists .logout-icon:hover ,.right-layer .welcom-part .log-icons:hover, .right-layer .newsletter-part .newsletter-btn:hover{
+  opacity: .65;
+}
+.right-layer .right-lists .logout-icon img, .right-layer .welcom-part .log-icons img {
+  margin-top: -3px;
+}
 .right-layer .right-lists .pointer {
   font-size: 11px;
   color: #af0000;
@@ -287,6 +309,18 @@ img:hover {
   list-style: disc;
   padding-left: 20px;
 }
+.right-layer .welcom-part .log-icons {
+  border: 1px solid red;
+  padding: 9px 20px;
+  border-radius: 3px;
+  color: #af0000;
+}
+.right-layer .newsletter-part .newsletter-btn {
+  background: #af0000;
+  padding: 10px 20px;
+  color: #ffffff;
+  border-radius: 4px;
+}
 .right-layer ul {
   list-style: none;
   padding: 0;
@@ -297,39 +331,10 @@ img:hover {
 .right-layer ul li img {
   width: 100%;
 }
-.banner-img a img:hover, .right-layer a img:hover, .main-data img:hover{
-  opacity: .65 !important;
-}
 
 .main-content .parts {
   padding-top: 20px;
   padding-bottom: 50px;
-}
-/*jssor slider css*/
-@keyframes jssorl-009-spin {
-    from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); }
-}
-
-/*jssor slider bullet skin 057 css*/
-.jssorb057 .i {position:absolute;cursor:pointer;}
-.jssorb057 .i .b {fill:#cccccc;}
-.jssorb057 .i:hover .b {fill: #af0000;}
-.jssorb057 .iav .b {fill: #af0000;}
-.jssorb057 .i.idn {opacity:.3;}
-
-/*jssor slider arrow skin 073 css*/
-.jssora073 {display:block;position:absolute;cursor:pointer;}
-.jssora073 .a {fill:#ddd;fill-opacity:.7;stroke:#000;stroke-width:160;stroke-miterlimit:10;stroke-opacity:.7;}
-.jssora073:hover {opacity:.8;}
-.jssora073.jssora073dn {opacity:.4;}
-.jssora073.jssora073ds {opacity:.3;pointer-events:none;}
-.jssora073 i {
-  font-size: 40px;
-  color: #cccccc;
-}
-#jssor_1 > :first-child, #jssor_2 > :first-child, #jssor_3 > :first-child, #jssor_4 > :first-child, #jssor_5 > :first-child, #jssor_6 > :first-child {
-  position: relative !important;
 }
 
 .recent-products i {
@@ -341,6 +346,7 @@ img:hover {
   color: #bf0000;
   float: left;
   margin: 0;
+  padding-bottom: 20px;
 }
 .group-sub-title {
   float: right;
@@ -454,3 +460,32 @@ img:hover {
 /*#owl-demo2 .owl-controls .owl-buttons div {
   top: 90px;
 }*/
+
+@media only screen and (max-width : 320px) {
+  
+}
+/* Extra Small Devices, Phones */ 
+@media only screen and (max-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+@media only screen and (max-width : 1024px) {
+  .main-content {
+    padding: 0 20px;
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
